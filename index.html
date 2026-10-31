@@ -4,73 +4,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
 <title>حسين حنتو | موقعي الشخصي</title>
 
 <style>
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  background: #080b14;
+  background:
+    radial-gradient(circle at top, #351010 0%, transparent 40%),
+    #090909;
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
+  min-height: 100vh;
 }
 
 header {
-  padding: 25px;
-  background: #111827;
-  border-bottom: 2px solid #805ad5;
+  padding: 55px 15px 35px;
+  background: linear-gradient(135deg, #190707, #111);
+  border-bottom: 2px solid #e50925;
 }
 
 header h1 {
-  color: #a78bfa;
-  font-size: 32px;
+  font-size: 38px;
+  color: #ff263f;
+  text-shadow: 0 0 20px #e50925;
+  margin-bottom: 12px;
+}
+
+header p {
+  color: #ddd;
+  font-size: 17px;
 }
 
 main {
-  padding: 35px 15px;
+  padding: 30px 15px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.profile {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff263f;
+  box-shadow: 0 0 20px #e50925, 0 0 45px #650b19;
+  margin: 10px auto 25px;
 }
 
 .card {
-  background: #151c2c;
-  max-width: 550px;
+  background: linear-gradient(145deg, #1c1c1c, #101010);
+  max-width: 600px;
   margin: 22px auto;
-  padding: 25px;
-  border-radius: 18px;
-  border: 1px solid #343d52;
+  padding: 28px 20px;
+  border-radius: 20px;
+  border: 1px solid #51202a;
+  box-shadow: 0 8px 25px #0008;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #ff263f;
+  box-shadow: 0 0 22px #e5092533;
 }
 
 h2 {
-  color: #a78bfa;
+  color: #ff344b;
+  font-size: 23px;
+  margin-bottom: 17px;
 }
 
-p {
-  color: #d1d5db;
+.card p {
+  color: #ddd;
   line-height: 2;
   font-size: 17px;
 }
 
-a {
-  display: inline-block;
-  background: #7652c8;
-  color: white;
-  padding: 12px 22px;
-  margin: 7px;
-  border-radius: 10px;
-  text-decoration: none;
+.social-links {
+  margin: 30px auto;
 }
 
-a:hover {
-  background: #9575e5;
+.social-links a {
+  display: inline-block;
+  background: linear-gradient(135deg, #e50925, #800817);
+  color: white;
+  padding: 14px 22px;
+  margin: 7px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px #e5092544;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.08);
+  background: #ff263f;
 }
 
 footer {
-  padding: 25px;
-  color: #9ca3af;
+  padding: 28px 15px;
+  color: #999;
+  border-top: 1px solid #38131a;
+  background: #0d0d0d;
+  margin-top: 35px;
+  font-size: 14px;
 }
+
 </style>
 </head>
 
@@ -78,42 +125,44 @@ footer {
 
 <header>
   <h1>حسين حنتو</h1>
-  <p>أهلاً بكم في موقعي الشخصي ❤️</p>
+  <p>أهلاً بكم في عالمي الشخصي ❤️</p>
 </header>
 
 <main>
-<img src="IMG_20261017_165626_079.webp" alt="صورتي الشخصية" style="width:160px;height:160px;object-fit:cover;border-radius:50%;border:4px solid #9ca3af;margin:20px auto;">
-  <section class="card">
-    <h2>👋 من أنا؟</h2>
-    <p>
-      أنا حسين حنتو، أحب التقنية والألعاب
-      والتعلم واكتشاف الأشياء الجديدة.
-      أهلاً وسهلاً بكم في موقعي!
-    </p>
-  </section>
 
-<div class="social-links">
-  <a href="https://www.instagram.com/5tokn/" target="_blank">📸 Instagram</a>
-  <a href="https://www.tiktok.com/@oil_9103" target="_blank">🎵 TikTok</a>
-  <a href="https://t.me/HsEiiN_aLi" target="_blank">✈️ Telegram</a>
-</div>
-  
-  <section class="card">
-    <h2>⭐ اهتماماتي</h2>
-    <p>🎮 الألعاب</p>
-    <p>💻 التكنولوجيا</p>
-    <p>🌐 الإنترنت والتصميم</p>
-  </section>
+<img class="profile"
+src="IMG_20261017_165626_079.webp"
+alt="صورتي الشخصية">
 
-  <section class="card">
-    <h2>📱 حساباتي</h2>
-    <p>قريباً سأضيف روابط حساباتي هنا.</p>
-  </section>
+<section class="card">
+  <h2>👋 من أنا؟</h2>
+  <p>
+    أنا حسين حنتو، أحب التقنية والألعاب
+    والتعلم واكتشاف الأشياء الجديدة.
+    أهلاً وسهلاً بكم في موقعي!
+  </p>
+</section>
 
-  <section class="card">
-    <h2>🚀 مشاريعي</h2>
-    <p>هنا ستجد مشاريعي وأعمالي القادمة.</p>
-  </section>
+<section class="card">
+  <h2>⭐ اهتماماتي</h2>
+  <p>🎮 الألعاب</p>
+  <p>💻 التكنولوجيا</p>
+  <p>🌐 الإنترنت والتصميم</p>
+</section>
+
+<section class="card">
+  <h2>📱 تابعني على حساباتي</h2>
+  <div class="social-links">
+    <a href="https://www.instagram.com/5tokn/" target="_blank" rel="noopener">📸 Instagram</a>
+    <a href="https://www.tiktok.com/@oil_9103" target="_blank" rel="noopener">🎵 TikTok</a>
+    <a href="https://t.me/HsEiiN_aLi" target="_blank" rel="noopener">✈️ Telegram</a>
+  </div>
+</section>
+
+<section class="card">
+  <h2>🚀 مشاريعي</h2>
+  <p>هنا ستجد مشاريعي وأعمالي القادمة.</p>
+</section>
 
 </main>
 
